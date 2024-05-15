@@ -11,9 +11,9 @@ let nowLang = null;
 let merged = {};
 let vuei18n = null;
 let i18nHandler = function () {
-    if (Reflect.has(this, '$t')) {
-        return this.$t(...arguments);
-    }
+    // if (Reflect.has(this, '$t')) {
+    //     return this.$t(...arguments);
+    // }
     if (vuei18n && vuei18n.global) {
         return vuei18n.global.t(...arguments);
     }
